@@ -18,9 +18,8 @@ To run this app, all you need to do are:
 
 You can start your Django application this way:
 
+{% include virtualenv_setup.md %}
 ```bash
-python -m venv .venv
-source .venv/bin/activate
 pip install -U pip
 pip install -r requirements.txt
 

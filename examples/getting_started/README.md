@@ -10,7 +10,7 @@ responding to events and interactive buttons.
 
 ### 1. Setup environment variables
 
-```zsh
+```bash
 # Replace with your signing secret and token
 export SLACK_BOT_TOKEN=<your-bot-token>
 export SLACK_SIGNING_SECRET=<your-signing-secret>
@@ -18,7 +18,7 @@ export SLACK_SIGNING_SECRET=<your-signing-secret>
 
 ### 2. Setup your local project
 
-```zsh
+```bash
 # Clone this project onto your machine
 git clone https://github.com/slackapi/bolt-python.git
 
@@ -26,9 +26,10 @@ git clone https://github.com/slackapi/bolt-python.git
 cd bolt-python/examples/getting_started/
 
 # Setup virtual environment
-python3 -m venv .venv
-source .venv/bin/activate
+```
+{% include virtualenv_setup.md %}
 
+```bash
 # Install the dependencies
 pip install -r requirements.txt
 ```
@@ -37,7 +38,7 @@ pip install -r requirements.txt
 
 [Setup ngrok][3] to create a local requests URL for development.
 
-```zsh
+```bash
 ngrok http 3000
 python3 app.py
 ```

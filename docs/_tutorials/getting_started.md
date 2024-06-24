@@ -69,21 +69,18 @@ With the initial configuration handled, it's time to set up a new Bolt project. 
 
 If you don’t already have a project, let’s create a new one. Create an empty directory:
 
-```shell
+```bash
 mkdir first-bolt-app
 cd first-bolt-app
 ```
 
 Next, we recommend using a [Python virtual environment](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/#creating-a-virtual-environment) to manage your project's dependencies. This is a great way to prevent conflicts with your system's Python packages. Let's create and activate a new virtual environment with [Python 3.6 or later](https://www.python.org/downloads/):
 
-```shell
-python3 -m venv .venv
-source .venv/bin/activate
-```
+{% include virtualenv_setup.md %}
 
 We can confirm that the virtual environment is active by checking that the path to `python3` is _inside_ your project ([a similar command is available on Windows](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/#activating-a-virtual-environment)):
 
-```shell
+```bash
 which python3
 # Output: /path/to/first-bolt-app/.venv/bin/python3
 ```

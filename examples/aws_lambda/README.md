@@ -39,9 +39,8 @@ Instructions on how to set up and deploy each example are provided below.
    apps as the environment variables `SLACK_BOT_TOKEN` and
    `SLACK_SIGNING_SECRET`, respectively, as per the [Getting
    Started Guide](https://slack.dev/bolt-python/tutorial/getting-started).
-5. You may want to create a dedicated virtual environment for this example app, as
-   per the "Setting up your project" section of the [Getting
-   Started Guide](https://slack.dev/bolt-python/tutorial/getting-started).
+5. You may want to create a dedicated virtual environment for this example app:
+{% include virtualenv_setup.md %}
 6. Let's deploy the Lambda! Run `./deploy_lazy.sh`. By default it deploys to the
    us-east-1 region in AWS - you can change this at the top of `lazy_aws_lambda_config.yaml` if you wish.
 7. Load up AWS Lambda inside the AWS Console - make sure you are in the correct
