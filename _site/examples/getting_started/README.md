@@ -26,10 +26,9 @@ git clone https://github.com/slackapi/bolt-python.git
 cd bolt-python/examples/getting_started/
 
 # Setup virtual environment
-```
-{% include virtualenv_setup.md %}
+python3 -m venv .venv
+source .venv/bin/activate
 
-```bash
 # Install the dependencies
 pip install -r requirements.txt
 ```
@@ -38,7 +37,7 @@ pip install -r requirements.txt
 
 [Setup ngrok][3] to create a local requests URL for development.
 
-```bash
+```zsh
 ngrok http 3000
 python3 app.py
 ```

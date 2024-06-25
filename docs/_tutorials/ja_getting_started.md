@@ -76,7 +76,7 @@ cd first-bolt-app
 
 次に、プロジェクトの依存関係を管理する方法として、[Python 仮想環境](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/#creating-a-virtual-environment)を使ったおすすめの方法を紹介します。これはシステム Python に存在するパッケージとのコンフリクトを防ぐために推奨されている優れた方法です。[Python 3.6 以降](https://www.python.org/downloads/)の仮想環境を作成し、アクティブにしてみましょう。
 
-{% include virtualenv_setup.md %}
+{% include virtual_env_setup.md %}
 
 `python3` へのパスがプロジェクトの中を指していることを確かめることで、仮想環境がアクティブになっていることを確認できます（[Windows でもこれに似たコマンドが利用できます](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/#activating-a-virtual-environment)）。
 
